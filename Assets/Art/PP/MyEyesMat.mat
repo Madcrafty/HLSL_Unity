@@ -75,8 +75,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     - hstep: 1
-    - radius: 0
-    - resolution: 118.5
+    - radius: 8.6
+    - resolution: 500
     - vstep: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
