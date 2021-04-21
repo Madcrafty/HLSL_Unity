@@ -1,0 +1,12 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ClickQuit : MonoBehaviour
+{
+    // Update is called once per frame
+    public void Quit()
+    {
+        Application.Quit();
+    }
+}
