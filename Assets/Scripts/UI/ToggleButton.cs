@@ -12,8 +12,8 @@ public class ToggleButton : MonoBehaviour
 
     [Header("HoloBridge Function")]
     public GameObject[] bridge;
-    public Material on;
-    public Material off;
+    public Material onMat;
+    public Material offMat;
     public ParticleSystem effect;
 
     
@@ -36,13 +36,13 @@ public class ToggleButton : MonoBehaviour
         {
             bool enabled = comp.GetComponent<Collider>().enabled;
             comp.GetComponent<Collider>().enabled = !enabled;
-            if (enabled)
+            if (!enabled)
             {
-                comp.GetComponent<Renderer>().material = on;
+                comp.GetComponent<Renderer>().material = onMat;
             }
             else
             {
-                comp.GetComponent<Renderer>().material = on;
+                comp.GetComponent<Renderer>().material = offMat;
             }
             effect.Play();
         }
